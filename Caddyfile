@@ -1,0 +1,18 @@
+{
+	http_port 15088
+}
+:8443, naive@gmail.com:8443 {
+	tls /etc/ssl/private/cert.crt /etc/ssl/private/private.key
+	route {
+		forward_proxy {
+			basic_auth user password
+			hide_ip
+			hide_via
+			probe_resistance
+		}
+		reverse_proxy https://demo.cloudreve.org {
+			header_up Host {upstream_hostport}
+			header_up X-Forwarded-Host {host}
+		}
+	}
+}
