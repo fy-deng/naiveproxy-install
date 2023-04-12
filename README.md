@@ -43,4 +43,4 @@ systemctl enable --now caddy && sleep 0.2 && systemctl status caddy
 | 查看日志 | `journalctl -u caddy --output cat -e` |
 | 实时日志 | `journalctl -u caddy --output cat -f` |
 
-[**客户端配置示例**](https://github.com/fy-deng/naiveproxy-install/main/client.json)
+[**客户端配置示例**](https://raw.githubusercontent.com/fy-deng/naiveproxy-install/main/client.json)
