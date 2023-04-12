@@ -16,7 +16,7 @@ sudo rm -f /usr/bin/caddy && curl -Lo /usr/bin/caddy https://raw.githubuserconte
 2. 下载配置并更新
 
 ```
-sudo mkdir -p /etc/caddy && curl -Lo /etc/caddy/Caddyfile https://raw.githubusercontent.com/fy-deng/naiveproxy-insall/main/Caddyfile
+sudo mkdir -p /etc/caddy && curl -Lo /etc/caddy/Caddyfile https://raw.githubusercontent.com/fy-deng/naiveproxy-install/main/Caddyfile
 ```
 
 3. 下载systemctl配置
