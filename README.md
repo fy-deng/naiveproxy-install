@@ -4,13 +4,13 @@
 :. linux-amd64
 
 ```
-sudo rm -f /usr/bin/caddy && curl -Lo /usr/bin/caddy https://raw.githubusercontent.com/fy-deng/naiveproxy-install/main/files/caddy-linux-amd64 && chmod +x /usr/bin/caddy*
+sudo rm -f /usr/bin/caddy && curl -Lo /usr/bin/caddy https://raw.githubusercontent.com/fy-deng/naiveproxy-install/main/files/caddy-linux-amd64 && chmod +x /usr/bin/caddy
 ```
 
 :. linux-arm64
 
 ```
-sudo rm -f /usr/bin/caddy && curl -Lo /usr/bin/caddy https://raw.githubusercontent.com/fy-deng/naiveproxy-install/main/files/caddy-linux-arm64 && chmod +x /usr/bin/caddy*
+sudo rm -f /usr/bin/caddy && curl -Lo /usr/bin/caddy https://raw.githubusercontent.com/fy-deng/naiveproxy-install/main/files/caddy-linux-arm64 && chmod +x /usr/bin/caddy
 ```
 
 2. 下载配置并更新
