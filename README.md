@@ -22,7 +22,7 @@ sudo mkdir -p /etc/caddy && curl -Lo /etc/caddy/Caddyfile https://raw.githubuser
 3. 下载systemctl配置
 
 ```
-curl -Lo /etc/systemd/system/caddy.service https://raw.githubusercontent.com/fy-deng/naiveproxy-install/main/caddy.service && systemctl daemon-reload
+sudo curl -Lo /etc/systemd/system/caddy.service https://raw.githubusercontent.com/fy-deng/naiveproxy-install/main/caddy.service && chmod +x /etc/systemd/system/caddy.service && systemctl daemon-reload
 ```
 
 4. 上传证书和私钥
@@ -32,7 +32,7 @@ curl -Lo /etc/systemd/system/caddy.service https://raw.githubusercontent.com/fy-
 5. 启动程序
 
 ```
-systemctl enable --now caddy && sleep 0.2 && systemctl status caddy
+sudo systemctl enable --now caddy && sleep 0.2 && systemctl status caddy
 ```
 
 | 项目 | |
