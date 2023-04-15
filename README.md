@@ -11,6 +11,7 @@ sudo chmod +x /usr/bin/caddy
 :. linux-arm64
 
 ```
+sudo mkdir /etc/caddy && \
 sudo curl -fL https://raw.githubusercontent.com/fy-deng/naiveproxy-install/main/files/caddy-linux-arm64 -o /usr/bin/caddy && \
 sudo chmod +x /usr/bin/caddy
 ```
