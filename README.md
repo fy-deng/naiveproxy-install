@@ -26,7 +26,7 @@ sudo chmod 644 /etc/caddy/Caddyfile
 3. 下载systemctl配置
 
 ```
-sudo curl -fL https://raw.githubusercontent.com/fy-deng/naiveproxy-install/main/caddy.service -o /etc/systemd/system/caddy.service && \ 
+sudo curl -fL https://raw.githubusercontent.com/fy-deng/naiveproxy-install/main/caddy.service -o /etc/systemd/system/caddy.service && \
 sudo chmod 644 /etc/systemd/system/caddy.service && \
 sudo systemctl daemon-reload
 ```
