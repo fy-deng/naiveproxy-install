@@ -10,7 +10,7 @@
 			hide_via
 			probe_resistance
 		}
-		reverse_proxy https://cloudreve.org {
+		reverse_proxy https://nextcloud.com {
 			header_up Host {upstream_hostport}
 			header_up X-Forwarded-Host {host}
 		}
