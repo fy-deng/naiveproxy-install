@@ -4,25 +4,30 @@
 :. linux-amd64
 
 ```
-sudo rm -f /usr/bin/caddy && curl -Lo /usr/bin/caddy https://raw.githubusercontent.com/fy-deng/naiveproxy-install/main/files/caddy-linux-amd64 && chmod +x /usr/bin/caddy
+sudo curl -fL https://raw.githubusercontent.com/fy-deng/naiveproxy-install/main/files/caddy-linux-amd64 -o /usr/bin/caddy && \
+sudo chmod +x /usr/bin/caddy
 ```
 
 :. linux-arm64
 
 ```
-sudo rm -f /usr/bin/caddy && curl -Lo /usr/bin/caddy https://raw.githubusercontent.com/fy-deng/naiveproxy-install/main/files/caddy-linux-arm64 && chmod +x /usr/bin/caddy
+sudo curl -fL https://raw.githubusercontent.com/fy-deng/naiveproxy-install/main/files/caddy-linux-arm64 -o /usr/bin/caddy && \
+sudo chmod +x /usr/bin/caddy
 ```
 
 2. 下载配置并更新
 
 ```
-sudo mkdir -p /etc/caddy && curl -Lo /etc/caddy/Caddyfile https://raw.githubusercontent.com/fy-deng/naiveproxy-install/main/Caddyfile && chmod +x /etc/caddy/Caddyfile
+sudo curl -fL https://raw.githubusercontent.com/fy-deng/naiveproxy-install/main/Caddyfile -o /etc/caddy/Caddyfile && \
+sudo chmod 644 /etc/caddy/Caddyfile
 ```
 
 3. 下载systemctl配置
 
 ```
-sudo curl -Lo /etc/systemd/system/caddy.service https://raw.githubusercontent.com/fy-deng/naiveproxy-install/main/caddy.service && chmod +x /etc/systemd/system/caddy.service && systemctl daemon-reload
+sudo curl -fL https://raw.githubusercontent.com/fy-deng/naiveproxy-install/main/caddy.service -o /etc/systemd/system/caddy.service && \ 
+sudo chmod 644 /etc/systemd/system/caddy.service && \
+sudo systemctl daemon-reload
 ```
 
 4. 上传证书和私钥
@@ -32,7 +37,7 @@ sudo curl -Lo /etc/systemd/system/caddy.service https://raw.githubusercontent.co
 5. 启动程序
 
 ```
-sudo systemctl enable --now caddy && sleep 0.2 && systemctl status caddy
+sudo systemctl enable --now caddy && sleep 0.2 && sudo systemctl status caddy
 ```
 
 | 项目 | |

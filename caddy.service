@@ -9,9 +9,9 @@ User=root
 Group=root
 ExecStart=/usr/bin/caddy run --environ --config /etc/caddy/Caddyfile
 ExecReload=/usr/bin/caddy reload --config /etc/caddy/Caddyfile
-TimeoutStopSec=5s
+TimeoutStopSec=10s
 PrivateTmp=true
-ProtectSystem=full
+ProtectSystem=strict
 
 [Install]
 WantedBy=multi-user.target
