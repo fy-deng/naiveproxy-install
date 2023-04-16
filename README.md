@@ -18,7 +18,7 @@ sudo chmod +x /usr/bin/caddy
 2. 下载配置并更新
 
 ```
-sudo mkdir /etc/caddy && \
+sudo mkdir -p /etc/caddy && \
 sudo curl -fL https://raw.githubusercontent.com/fy-deng/naiveproxy-install/main/Caddyfile -o /etc/caddy/Caddyfile && \
 sudo chmod 644 /etc/caddy/Caddyfile
 ```
